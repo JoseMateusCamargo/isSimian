@@ -62,22 +62,17 @@ class GFG:
 # Driver Code 
 if __name__=='__main__': 
 	
-	#dna = ' '.join(sys.argv[1:])
+	dna = sys.argv[1]
 
-	dna = 'ATGCGA CAGTCC TTiTGT AsTAGG CCCSTA TCACTG'
-
-	gfg = GFG()
-	
-	valid = True
+	gfg = GFG() 
 
 	for i in range(len(dna)):
-		
 		for j in range(len(dna[i])):
-			print('oi')
-			if dna[i][j] not in ['A','C', 'T', 'G', ' ']:
-				valid = False
-				print('DNA invalido')
+			if dna[i][j] not in ['A','C', 'T', 'G']:
+				flag = False
 				break
+			else:
+				flag = True
 	
-	if valid:
+	if flag:
 		gfg.isSimian(dna)
