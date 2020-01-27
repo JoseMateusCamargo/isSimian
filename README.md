@@ -22,21 +22,21 @@ Formanto exemplo do JSON:
 "dna": ["CTGAGA", "CTAAGC", "ATTTGT", "ACCCCG", "CTCCTA", "CTCCTG"]
 }
 
-Comandos:
+:+1: Solicitação:
 
-:+1: via <a>postman</a>, return False (HTTP 403-FORBIDDEN):
+Usando postman, return False (HTTP 403-FORBIDDEN):
 
 ![](https://i.ibb.co/f9jc0mG/2.png)
 
 
-:+1: via postman, return True (HTTP 200-OK):
+Usando postman, return True (HTTP 200-OK):
 
 ![](https://i.ibb.co/8BSB3Rc/23.png)
 
 Caso o DNA já foi cadastro do banco o mesmo não será recadastrado, e a requisição tera um retorno (DNA já cadastrado), exemplo abaixo:
 
 
-:-1: via postman, return (DNA já cadastrado)
+Usando postman, return (DNA já cadastrado)
 
 ![](https://i.ibb.co/b3zjqbC/sdfasdf.png)
 
@@ -49,12 +49,10 @@ GET /stats/
 
 Este serviço responde um <i><b>HTTP GET</b></i> retornando um <i><b>JSON</b></i> com as estatísticas de verificações de DNA, informando aa quantidade de DNA’s símios, quantidade de DNA’s humanos, e a proporção de símios para a população humana, comandos e exemplos abaixo:
 
-Comandos:
+:+1: Solicitação:
 
-:+1: via curl: curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
+Usando curl: curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
+
+Usando postman
 
 ![:+1: via postman:](https://i.ibb.co/sVJ32F2/Sem-t-tulo.png)
-
-
-
-
