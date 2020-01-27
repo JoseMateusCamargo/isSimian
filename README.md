@@ -23,7 +23,7 @@ Formanto exemplo do JSON:
 "dna": ["CTGAGA", "CTAAGC", "ATTTGT", "ACCCCG", "CTCCTA", "CTCCTG"]
 }
 
-###Solicitação
+### Solicitação usando postman
 
 Usando postman, return False (HTTP 403-FORBIDDEN):
 
@@ -51,11 +51,11 @@ GET /stats/
 
 Este serviço responde um <i><b>HTTP GET</b></i> retornando um <i><b>JSON</b></i> com as estatísticas de verificações de DNA, informando aa quantidade de DNA’s símios, quantidade de DNA’s humanos, e a proporção de símios para a população humana, comandos e exemplos abaixo:
 
-###Solicitação
+### Solicitação
 ```
 curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
 ```
-Resposta:
+### Resposta
 ```
 curl: (6) Could not resolve host: application
 HTTP/1.1 200 OK
@@ -70,7 +70,6 @@ Content-Type: application/json
 "{\"count_mutant_dna\": 1, \"count_human_dna\": 0, \"ratio\": INF}"
 ```
 
-
-Via postman
+### Solicitação usando postman
 
 ![:+1: via postman:](https://i.ibb.co/sVJ32F2/Sem-t-tulo.png)
