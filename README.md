@@ -6,9 +6,7 @@ A API REST para o aplicativo de exemplo é descrita abaixo, utilizando PHP
 
 Os teste podem ser realizados, utilizando:
 
-<i>Postman</i> <a>https://www.getpostman.com/</a>, ou
-
-Linha de comando <i>curl</i> <a>https://curl.haxx.se/</a>
+<i>Postman</i> <a>https://www.getpostman.com/</a>, ou linha de comando <i>curl</i> <a>https://curl.haxx.se/</a>
 
 
 ## Validação de DNA 
