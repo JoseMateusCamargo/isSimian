@@ -1,8 +1,8 @@
 # isSimian
 
-# API REST - PHP
+# REST - PHP
 
-A API REST para o aplicativo de exemplo é descrita abaixo:
+A REST para o aplicativo de exemplo é descrita abaixo:
 
 Os teste podem ser realizados, utilizando:
 
