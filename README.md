@@ -14,7 +14,7 @@ Os teste podem ser realizados, utilizando:
 Esse projeto tem como objetivo a validação de uma sequência de DNA para (símio ou humano) utilizando PHP como API e python como validador em uma matrix NxN, no python foi utilizado a busca por palavra em grid (horizontal, vertical e diagonal), complexibilidade de O(R*C*N).
 
 
-#### in Nodejs (em desenvolvimento)
+#### in <a href="https://github.com/JoseMateusCamargo/isSimian/tree/master/nodeApi">Node.js</a> (em desenvolvimento)
 
 O projeto em <i><b>Nodejs</i></b> conta com as mesmas premissas na parte de processo de resolução da sequencia de DNA, utilizando banco de dados MySQL.
 Ressaltando a utilização de frameworks como <i>(Memcached)</i> - sistema de caching de objetos em memória, entre outras. <i>Features</i>
