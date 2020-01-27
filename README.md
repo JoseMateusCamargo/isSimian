@@ -36,12 +36,19 @@ Return True (HTTP 200-OK):
 
 ![](https://i.ibb.co/8BSB3Rc/23.png)
 
-Caso o DNA já foi cadastro do banco o mesmo não será recadastrado, e a requisição tera um retorno (DNA já cadastrado), exemplo abaixo:
+OBS: Caso o DNA já foi cadastro do banco o mesmo não será recadastrado, e a requisição tera um retorno (DNA ja cadastrado), exemplo abaixo:
 
 
-Return (DNA já cadastrado)
+Return (DNA ja cadastrado)
 
 ![](https://i.ibb.co/b3zjqbC/sdfasdf.png)
+
+
+OBS01: As letras da String só podem ser: <i><b>(A, T, C, G)</i></b>, que representa cada base nitrogenada do DNA. Caso a sequencia DNA contenha outro caractere o retorno será (DNA invalido)
+
+Return (DNA invalido)
+
+![](https://i.ibb.co/pwrBX71/asdfasdfasdf.png)
 
 
 ## Obter status dos registros no banco de dados
