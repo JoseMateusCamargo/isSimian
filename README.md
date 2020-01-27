@@ -25,19 +25,19 @@ Formanto exemplo do JSON:
 
 ### Solicitação usando postman
 
-Usando postman, return False (HTTP 403-FORBIDDEN):
+Return False (HTTP 403-FORBIDDEN):
 
 ![](https://i.ibb.co/f9jc0mG/2.png)
 
 
-Usando postman, return True (HTTP 200-OK):
+Return True (HTTP 200-OK):
 
 ![](https://i.ibb.co/8BSB3Rc/23.png)
 
 Caso o DNA já foi cadastro do banco o mesmo não será recadastrado, e a requisição tera um retorno (DNA já cadastrado), exemplo abaixo:
 
 
-Usando postman, return (DNA já cadastrado)
+Return (DNA já cadastrado)
 
 ![](https://i.ibb.co/b3zjqbC/sdfasdf.png)
 
@@ -72,4 +72,4 @@ Content-Type: application/json
 
 ### Solicitação usando postman
 
-![:+1: via postman:](https://i.ibb.co/sVJ32F2/Sem-t-tulo.png)
+![](https://i.ibb.co/sVJ32F2/Sem-t-tulo.png)
