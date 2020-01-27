@@ -52,14 +52,14 @@ OBS: Caso o DNA já foi cadastro no banco o mesmo não será recadastrado e a re
 
 Return (DNA ja cadastrado)
 
-![](https://i.ibb.co/BL8ncvc/sdfasdfasdfasdfasdf.png
+![](https://i.ibb.co/BL8ncvc/sdfasdfasdfasdfasdf.png)
 
 
 OBS01: As letras da da sequência de DNA somente podem conter <i><b>(A, T, C, G)</i></b>, que representa cada base nitrogenada do DNA. Caso a sequência DNA contenha outro caractere o retorno será (DNA invalido)
 
 Return (DNA invalido)
 
-![:]Em desenvolvimento
+:+1: Em desenvolvimento
 
 
 ## Obter status dos registros no banco de dados
@@ -77,17 +77,17 @@ curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
 ```
 ### Resposta
 ```
+curl -i -H 'Accept: application/json' http://localhost:3000/stats
 curl: (6) Could not resolve host: application
 HTTP/1.1 200 OK
-Date: Mon, 27 Jan 2020 02:22:53 GMT
-Server: Apache
-Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept"
-Access-Control-Allow-Origin: *
-Connection: close
-Transfer-Encoding: chunked
-Content-Type: application/json
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+ETag: W/"36-FyN8rfaA213Nm+yTCOuYAd8Biuk"
+Date: Mon, 27 Jan 2020 17:33:53 GMT
+Connection: keep-alive
 
-"{\"count_mutant_dna\": 1, \"count_human_dna\": 0, \"ratio\": INF}"
+[{"count_human_dna":3,"count_mutant_dna":3,"ratio":1}]
 ```
 
 ### Solicitação usando postman
