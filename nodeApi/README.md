@@ -1,6 +1,6 @@
 # isSimian
 
-# REST - NODEJS
+# REST - NODE.JS
 
 A REST para o aplicativo de exemplo é descrita abaixo:
 
@@ -73,7 +73,7 @@ Este serviço responde um <i><b>HTTP GET</b></i> retornando um <i><b>JSON</b></i
 
 ### Solicitação
 ```
-curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
+curl -i -H 'Accept: application/json' http://localhost:3000/stats
 ```
 ### Resposta
 ```
