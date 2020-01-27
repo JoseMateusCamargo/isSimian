@@ -1,0 +1,24 @@
+{
+  "name": "issimainapi",
+  "version": "1.0.0",
+  "description": "1.\r > npm init\r > npm install --save express (to istall the lib express)(--save is to update packeage.json)\r     > if get error SIGNED try: npm set strict-ssl false",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "meli"
+  ],
+  "author": "mateus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2"
+  }
+}

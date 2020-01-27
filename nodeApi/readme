@@ -1,0 +1,18 @@
+
+1.
+> npm init
+> npm install --save express (to istall the lib express)(--save is to update packeage.json)
+    > if get error SIGNED try: npm set strict-ssl false 
+
+> node index.js (to open manual API)
+> npm install -g nodemon
+> npm install --save consign
+
+2.
+> npm install --save body-parser
+> npm install --save mysql
+> npm install --save express-validator
+
+3.
+> npm install --save restify
+> npm install --save soap
