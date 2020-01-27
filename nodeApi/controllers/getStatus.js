@@ -20,11 +20,7 @@ module.exports = function(app){
         var connection = app.persistencia.connectionFactory();
         var registryDao = new app.persistencia.RegistryDao(connection);
 
-        //const dnaStr = req.body.dna;
-
-        const dnaStr = req.body.dna.toString().trim().replace(/,/g, ' ');
-
-        console.log(dnaStr);
+        const dnaStr = req.body.dna;
 
         registryDao.select(dnaStr.toString(), function(exception, result){ 
 
@@ -36,18 +32,17 @@ module.exports = function(app){
 
             //start script
             var spawn = require("child_process").spawn;
-            var process = spawn('python', ["./python/isSimian.py", dnaStr]);
+            var process = spawn('python', ["./python/isSimian.py", req.body.dna]);
 
             process.stdout.on('data', function(data){
 
                 const status = data.toString().trim();
                             
-                registryDao.salva(dnaStr, status, function(exception, result){
-                console.log('DNA salvo: ' + dnaStr.toString());
-                    //res.json(dna);
+                registryDao.salva(dnaStr.toString(), status, function(exception, result){
+                    console.log('DNA salvo: ' + dnaStr.toString());
                 });
 
-                if(status == 'True') {
+                if(status == 1) {
                     res.status(200).send();
                 } else {
                     res.status(403).send();     
