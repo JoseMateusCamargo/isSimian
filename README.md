@@ -2,9 +2,13 @@
 
 # API REST - PHP
 
-A API REST para o aplicativo de exemplo é descrita abaixo.
+A API REST para o aplicativo de exemplo é descrita abaixo, utilizando PHP
 
-Os teste podem ser realizados via postman <a>https://www.getpostman.com/</a>
+Os teste podem ser realizados, utilizando:
+
+<i>Postman</i> <a>https://www.getpostman.com/</a>, ou
+
+Linha de comando <i>curl</i> <a>https://curl.haxx.se/</a>
 
 
 ## Validação de DNA 
