@@ -10,8 +10,9 @@ Os teste podem ser realizados via postman <a>https://www.getpostman.com/</a>
 ## Validação de DNA 
 
 http://jmcleva.com.br/cgi-bin/simian/
-
+```
 POST /simian/
+```
 
 Neste serviço é recebido uma sequencia de DNA através de um <i><b>HTTP POST</b></i> com <i><b>JSON</b></i>, comandos e exemplos abaixo:
 
@@ -22,7 +23,7 @@ Formanto exemplo do JSON:
 "dna": ["CTGAGA", "CTAAGC", "ATTTGT", "ACCCCG", "CTCCTA", "CTCCTG"]
 }
 
-:+1: Solicitação:
+###Solicitação
 
 Usando postman, return False (HTTP 403-FORBIDDEN):
 
@@ -44,15 +45,32 @@ Usando postman, return (DNA já cadastrado)
 ## Obter status dos registros no banco de dados
 
 http://jmcleva.com.br/cgi-bin/stats/
-
+```
 GET /stats/
+```
 
 Este serviço responde um <i><b>HTTP GET</b></i> retornando um <i><b>JSON</b></i> com as estatísticas de verificações de DNA, informando aa quantidade de DNA’s símios, quantidade de DNA’s humanos, e a proporção de símios para a população humana, comandos e exemplos abaixo:
 
-:+1: Solicitação:
+###Solicitação
+```
+curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
+```
+Resposta:
+```
+curl: (6) Could not resolve host: application
+HTTP/1.1 200 OK
+Date: Mon, 27 Jan 2020 02:22:53 GMT
+Server: Apache
+Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept"
+Access-Control-Allow-Origin: *
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: application/json
 
-Usando curl: curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
+"{\"count_mutant_dna\": 1, \"count_human_dna\": 0, \"ratio\": INF}"
+```
 
-Usando postman
+
+Via postman
 
 ![:+1: via postman:](https://i.ibb.co/sVJ32F2/Sem-t-tulo.png)
