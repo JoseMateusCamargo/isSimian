@@ -63,6 +63,8 @@ class GFG:
 if __name__=='__main__': 
     
 	dna = ' '.join(sys.argv[1:])
+	
+	dna = dna.split()
 
 	gfg = GFG()
 	
