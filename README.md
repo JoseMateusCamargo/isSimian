@@ -23,7 +23,7 @@ Ressaltando a utilização de frameworks como <i>(Memcached)</i> - sistema de ca
 
 ## Validação de DNA 
 
-http://jmcleva.com.br/cgi-bin/simian/
+http://issimian.jmcleva.com.br/simian/
 ```
 POST /simian/
 ```
@@ -65,7 +65,7 @@ Return (DNA invalido)
 
 ## Obter status dos registros no banco de dados
 
-http://jmcleva.com.br/cgi-bin/stats/
+http://issimian.jmcleva.com.br/stats/
 ```
 GET /stats/
 ```
@@ -74,7 +74,7 @@ Este serviço responde um <i><b>HTTP GET</b></i> retornando um <i><b>JSON</b></i
 
 ### Solicitação
 ```
-curl -i -H 'Accept: application/json' http://jmcleva.com.br/cgi-bin/stats/
+curl -i -H 'Accept: application/json' http://issimian.jmcleva.com.br/stats/
 ```
 ### Resposta
 ```
