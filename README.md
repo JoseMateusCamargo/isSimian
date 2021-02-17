@@ -2,8 +2,6 @@
 
 # REST - PHP
 
-A REST para o aplicativo de exemplo é descrita abaixo:
-
 Os teste podem ser realizados, utilizando:
 
 <i>Postman</i> <a>https://www.getpostman.com/</a> ou linha de comando <i>curl</i> <a>https://curl.haxx.se/</a>
@@ -11,19 +9,19 @@ Os teste podem ser realizados, utilizando:
 
 # Descrição do projeto
 
-Esse projeto tem como objetivo a validação de uma sequência de DNA para (símio ou humano) utilizando PHP como API e python como validador em uma matrix NxN, no python foi utilizado a busca por palavra em grid (horizontal, vertical e diagonal), complexibilidade de O(R*C*N).
+Esse projeto tem como objetivo a validação de uma sequência de DNA para (símio ou humano) utilizando PHP como API e Python como validador em uma matrix NxN, no Python foi utilizado a busca por palavra em grid (horizontal, vertical e diagonal), complexibilidade de O(R*C*N).
 
 
 #### in <a href="https://github.com/JoseMateusCamargo/isSimian/tree/master/nodeApi">Node.js</a> (em desenvolvimento)
 
 O projeto em <i><b>Nodejs</i></b> conta com as mesmas premissas na parte de processo de resolução da sequencia de DNA, utilizando banco de dados MySQL.
-Ressaltando a utilização de frameworks como <i>(Memcached)</i> - sistema de caching de objetos em memória, entre outras. <i>Features</i>
+Utilização de frameworks como <i>(Memcached)</i> - sistema de caching de objetos em memória, entre outras. <i>Features</i>
 
 
 
 ## Validação de DNA 
 
-http://issimian.jmcleva.com.br/simian/
+<del>http://issimian.jmcleva.com.br/simian/</del>
 ```
 POST /simian/
 ```
@@ -65,7 +63,7 @@ Return (DNA invalido)
 
 ## Obter status dos registros no banco de dados
 
-http://issimian.jmcleva.com.br/stats/
+<del>http://issimian.jmcleva.com.br/stats/</del>
 ```
 GET /stats/
 ```
